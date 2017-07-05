@@ -42,10 +42,12 @@ public class Main {
                         NodeHandle nodeA = dsl.startNode(getX509Name("NodeA", "Paris", "root@city.fr.example"), emptySet(), ImmutableList.of(user), VerifierType.InMemory, emptyMap()).get();
                         NodeHandle nodeB = dsl.startNode(getX509Name("NodeB", "Rome", "root@city.it.example"), emptySet(), ImmutableList.of(user), VerifierType.InMemory, emptyMap()).get();
                         NodeHandle nodeC = dsl.startNode(getX509Name("NodeC", "New York", "root@city.us.example"), emptySet(), ImmutableList.of(user), VerifierType.InMemory, emptyMap()).get();
+                        NodeHandle nodeD = dsl.startNode(getX509Name("NodeD", "Limoges", "root@city.fr.example"), emptySet(), ImmutableList.of(user), VerifierType.InMemory, emptyMap()).get();
 
                         dsl.startWebserver(nodeA);
                         dsl.startWebserver(nodeB);
                         dsl.startWebserver(nodeC);
+                        dsl.startWebserver(nodeD);
 
                         dsl.waitForAllNodesToFinish();
                     } catch (Throwable e) {
