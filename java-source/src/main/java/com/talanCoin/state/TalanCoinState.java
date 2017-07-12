@@ -39,7 +39,7 @@ public class TalanCoinState implements ContractState {
         this.linearId = new UniqueIdentifier();
     }
 
-    public TalanCoingetIOU() { return iou; }
+    public TalanCoin getTalanCOin() { return talancoin; }
     public Party getSender() { return sender; }
     public Party getRecipient() { return recipient; }
     @Override public TalanCoinContract getContract() { return contract; }
@@ -51,7 +51,4 @@ public class TalanCoinState implements ContractState {
     public TalanCoinState(TalanCoinContract contract) { this.contract = contract; }
 
     @Override public TalanCoinContract getContract() { return contract; }
-
-    /** The public keys of the involved parties. */
-    @Override public List<AbstractParty> getParticipants() { return Collections.emptyList(); }
 }
