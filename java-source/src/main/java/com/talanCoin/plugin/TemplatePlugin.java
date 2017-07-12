@@ -1,8 +1,8 @@
-package com.template.plugin;
+package com.talanCoin.plugin;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
-import com.template.api.TemplateApi;
+import com.talanCoin.api.TemplateApi;
 import net.corda.core.messaging.CordaRPCOps;
 import net.corda.core.node.CordaPluginRegistry;
 import net.corda.core.serialization.SerializationCustomization;

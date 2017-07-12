@@ -1,7 +1,7 @@
-package com.template.client;
+package com.talanCoin.client;
 
 import com.google.common.net.HostAndPort;
-import com.template.state.TemplateState;
+import com.talanCoin.state.TalanCoinState;
 import kotlin.Pair;
 import net.corda.client.rpc.CordaRPCClientConfiguration;
 import net.corda.core.messaging.CordaRPCOps;
@@ -43,8 +43,8 @@ public class TemplateClientRPC {
                 transaction ->
                         transaction.getTx().getOutputs().forEach(
                                 output -> {
-                                    final TemplateState templateState = (TemplateState) output.getData();
-                                    logger.info(templateState.toString());
+                                    final TalanCoinState talanCoinState = (TalanCoinState) output.getData();
+                                    logger.info(talanCoinState.toString());
                                 })
         );
     }

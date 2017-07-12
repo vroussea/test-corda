@@ -1,4 +1,4 @@
-package com.template.api;
+package com.talanCoin.api;
 
 import net.corda.core.messaging.CordaRPCOps;
 

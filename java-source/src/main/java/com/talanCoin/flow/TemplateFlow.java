@@ -1,4 +1,4 @@
-package com.template.flow;
+package com.talanCoin.flow;
 
 import co.paralleluniverse.fibers.Suspendable;
 import net.corda.core.flows.InitiatedBy;
